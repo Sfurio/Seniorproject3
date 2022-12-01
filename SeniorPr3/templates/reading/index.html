@@ -1,0 +1,12 @@
+{% extends "reading/base.html" %}
+{% block content%}
+{% for info in info %}
+    {{ info.clip }}
+    {{ info.forclosuredate }}
+    {{ info.boughtdate }}
+    {{ info.mortgageamount }}
+    {{ info.recordingdate }}
+    {{ info.mortgagedate }}
+{% endfor %}
+
+{% endblock content%}
